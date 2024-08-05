@@ -31,7 +31,7 @@ const Programs = () => {
     </div>
     </div>
     </div>
-    </div
+    </div>
   )
 }
 
