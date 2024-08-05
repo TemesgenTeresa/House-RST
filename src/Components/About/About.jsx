@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 import about_img from '../../assets/Images/About1.png'
-import play_icon from '../../assets/Images/play_icon.jpg'
+import play_icon from '../../assets/Images/play_icon.png'
 
 
 const About = () => {
@@ -13,14 +13,14 @@ const About = () => {
       </div>
     <div className = "about-right">
         <h3> About House RST</h3>
-        <h2>HOUse sawping is...</h2>
-        <p>About Us
+        <h2>RENTING SWAPPPING & TRADING</h2>
+        <p>
 Welcome to House Connect: Your Home Trading, Renting, and Swapping Hub
 At House Connect, we believe that finding the perfect home should be a
  seamless and rewarding experience. Whether you're looking to trade, rent,
   or swap homes, our platform is designed to cater to your unique housing 
-  needs with ease and convenience.
-
+  needs with ease and convenience.<br/>
+  <br/>
 Our Mission
 Our mission is to revolutionize the way people find homes by offering a 
 comprehensive platform that connects homeowners and renters worldwide.

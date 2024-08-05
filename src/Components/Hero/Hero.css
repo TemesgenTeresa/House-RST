@@ -17,12 +17,12 @@
 }
 .hero-text {
     text-align:center;
-    max: width 800px;
+    max-width:800px;
     margin-top: 200px;
     margin-left: calc(17% - 200px); /* Adjust the horizontal positioning */
 }
 .hero-text h1{
-    font-size:60px;
+    font-size:50px;
     font-weight:600;
 }
 .hero-text p {

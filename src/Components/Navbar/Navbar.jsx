@@ -5,14 +5,14 @@ import logo from '../../assets/Images/logo.png'
 
 const Navbar = () => {
   return (
-    <nav className = 'container'>
+    <nav className = 'container dark-nav'>
         <img src = {logo} alt ="logo not found" className = "logo" />
         <ul>
             <li>Home</li>
             <li>House RST service</li>
             <li>About Us</li>
              <li>Contact us</li>
-            <li><button>Admin</button></li>
+            <li><button>Login/Sign up</button></li>
        </ul>
   </nav>
   )
