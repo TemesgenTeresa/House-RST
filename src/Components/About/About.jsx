@@ -32,7 +32,7 @@ What We Offer
 Looking to upgrade or downsize your living space? Our house trading
  service allows you to directly swap homes with others who share similar
   preferences. Say goodbye to the hassle of selling and buying separately;
-   our platform makes the transition smooth and efficient.</p></div>>
+   our platform makes the transition smooth and efficient.</p></div>
     </div>
   )
 }
