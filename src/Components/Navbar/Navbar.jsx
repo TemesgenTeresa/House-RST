@@ -11,8 +11,8 @@ const Navbar = () => {
             <li>Home</li>
             <li>House RST service</li>
             <li>About Us</li>
-            <li>Language</li>
-            <li><button>Sign up</button></li>
+             <li>Contact us</li>
+            <li><button>Admin</button></li>
        </ul>
   </nav>
   )

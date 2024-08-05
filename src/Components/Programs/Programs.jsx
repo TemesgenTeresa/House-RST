@@ -13,24 +13,24 @@ const Programs = () => {
       <div className="program">
         <img src={program_1} alt=""/>
         <div className="caption">
-            <img src={program_icon1} alt=" "/>
-            <p>House Renting</p>
-    </div>
-    <div className="program">
+          <img src={program_icon3} alt="" />
+          <p>የሚሸጥ ቤት</p>
+        </div>
+        </div>
+        <div className="program">
         <img src={program_2} alt=""/>
         <div className="caption">
-            <img src={program_icon2} alt=" "/>
-            <p>House Swapping</p>
-    </div>
-    </div>
-    <div className="program">
+          <img src={program_icon2} alt="" />
+          <p>የሚለወጥ ቤት</p>
+        </div>
+        </div><div className="program">
         <img src={program_3} alt=""/>
         <div className="caption">
-            <img src={program_icon3} alt=" "/>
-            <p>House Trading</p>
-    </div>
-    </div>
-    </div>
+          <img src={program_icon1} alt="" />
+          <p>የሚከራይ ቤት</p>
+        </div>
+        </div>
+        
     </div>
   )
 }
