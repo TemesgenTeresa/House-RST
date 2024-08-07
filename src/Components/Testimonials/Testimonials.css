@@ -1,0 +1,46 @@
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 10px;
+    color: #333;
+}
+
+.title {
+    font-size: 0.9em;
+    color: #777;
+}

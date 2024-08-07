@@ -1,18 +1,17 @@
-import React from 'react'
-import './Hero.css'
+import React from 'react';
+import './Hero.css';
+import videoSrc from '../../assets/Images/vid1.mp4';
 
 const Hero = () => {
-  return (
-    <div className='hero container'>
-      <div className="hero-text">
-      <h1>WE ENSURE BETTER HOME FOR OUR USER</h1><br/>
-        <p>HOUSE RST is an innovative online platform
-           designed to revolutionize the way people find and utilize
-            living spaces.</p><br/>
-             <button className='btn1'> Explore More </button>
-    </div>
-    </div>
-  )
+    return (
+        <div className="hero">
+            <video className="hero-video" src={videoSrc} autoPlay loop muted></video>
+            <div className="hero-content">
+                <h1>House RST</h1>
+                <p>Welcome to House Renting,Swapping & Trading.</p>
+            </div>
+        </div>
+    );
 }
 
-export default Hero
+export default Hero;

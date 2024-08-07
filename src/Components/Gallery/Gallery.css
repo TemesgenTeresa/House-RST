@@ -1,0 +1,28 @@
+.Gallery {
+    margin:80px auto;
+    width:90%;
+    text-align: center;
+}
+.Photos{
+   display: flex; 
+   align-items:center;
+   justify-content: space-between;
+   margin: bottom 40px;
+}
+.Photos img{
+    width:23%;
+    border-radius: 10px;
+
+}
+button {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+    border-radius: 5px; /* Adjust border radius as needed */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
