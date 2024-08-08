@@ -7,6 +7,7 @@ import About from './Components/About/About'
 import Gallery from './Components/Gallery/Gallery'
 import Testimonials from './Components/Testimonials/Testimonials'
 import ContactUs from './Components/ContactUs/ContactUs'
+import Footer from './Components/Footer/Footer'
 const App = () => {
   return (
     <div>
@@ -18,7 +19,8 @@ const App = () => {
       <About/>
       <Gallery/> 
       <Testimonials/> 
-      <ContactUs/>    
+      <ContactUs/> 
+      <Footer/>   
       </div>
       </div>
   )
