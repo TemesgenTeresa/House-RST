@@ -10,6 +10,7 @@ import Testimonials from './Components/Testimonials/Testimonials';
 import ContactUs from './Components/ContactUs/ContactUs';
 import Footer from './Components/Footer/Footer';
 import Registration from './Components/Registration/Registration';
+import LoginPage from './Components/LoginPage/LoginPage';
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           </>
         )} />
         <Route path="/register" element={<Registration />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </Router>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link for routing
 import './Registration.css';
 
 const RegistrationForm = () => {
@@ -64,6 +65,9 @@ const RegistrationForm = () => {
             />
           </div>
           <button type="submit">Register</button>
+          <div className="login-link">
+            <p>Already have an account? <Link to="/login">Login here</Link></p>
+          </div>
         </form>
       </div>
     </div>
