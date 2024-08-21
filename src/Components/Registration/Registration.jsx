@@ -64,7 +64,7 @@ const RegistrationForm = () => {
               required
             />
           </div>
-          <button type="submit">Register</button>
+          <button type="submit"><Link to="/login">Register</Link></button>
           <div className="login-link">
             <p>Already have an account? <Link to="/login">Login here</Link></p>
           </div>
