@@ -11,6 +11,7 @@ import ContactUs from './Components/ContactUs/ContactUs';
 import Footer from './Components/Footer/Footer';
 import Registration from './Components/Registration/Registration';
 import LoginPage from './Components/LoginPage/LoginPage';
+import Houses from './Components/Houses/Houses'
 
 const App = () => {
   return (
@@ -26,14 +27,14 @@ const App = () => {
               <About />
               <Gallery />
               <Testimonials />
-              <ContactUs />
-              <Footer />
+              <ContactUs /> 
             </div>
           </>
         )} />
         <Route path="/register" element={<Registration />} />
         <Route path="/login" element={<LoginPage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
