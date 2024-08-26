@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Footer = () => {
   return (
@@ -27,6 +28,7 @@ Experience comfort, innovation, and environmental responsibility in every corner
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './LoginPage.css'; // Create this CSS file for styling if needed
 
 const LoginPage = () => {
@@ -47,7 +48,7 @@ const LoginPage = () => {
               required
             />
           </div>
-          <button type="submit">Login</button>
+          <button type="submit"><Link to="/Houses">Login</Link></button>
         </form>
       </div>
     </div>

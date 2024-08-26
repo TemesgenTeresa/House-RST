@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
-import logo from '../../assets/Images/logo.png';
+import logo from '../../assets/Images/HP Images/logo.png';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const Navbar = () => {
@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
       <img src={logo} alt="logo not found" className="logo" />
       <ul>
-        <li>Home</li>
+        <li><Link to ="/">Home</Link></li>
         <li>About Us</li>
         <li>House RST service</li>
         <li>Contact us</li>

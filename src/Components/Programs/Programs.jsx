@@ -1,11 +1,11 @@
 import React from 'react'
 import'./Programs.css'
-import program_1 from '../../assets/Images/Et1.jpg'
-import program_2 from '../../assets/Images/Et2.jpg'
-import program_3 from '../../assets/Images/Et3.jpg'
-import program_icon1 from '../../assets/Images/icon1.png'
-import program_icon2 from '../../assets/Images/icon2.png'
-import program_icon3 from '../../assets/Images/icon3.png'
+import program_1 from '../../assets/Images/HP Images/Et1.jpg'
+import program_2 from '../../assets/Images/HP Images/Et2.jpg'
+import program_3 from '../../assets/Images/HP Images/Et3.jpg'
+import program_icon1 from '../../assets/Images/HP Images/icon1.png'
+import program_icon2 from '../../assets/Images/HP Images/icon2.png'
+import program_icon3 from '../../assets/Images/HP Images/icon3.png'
 
 const Programs = () => {
   return (

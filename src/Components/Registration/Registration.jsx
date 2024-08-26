@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link for routing
 import './Registration.css';
+import video from '../../assets/Images/HP Images/vid1.mp4';
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -25,7 +26,7 @@ const RegistrationForm = () => {
   return (
     <div className="registration-container">
       <video autoPlay loop muted className="background-video">
-        <source src="path-to-your-video.mp4" type="video/mp4" />
+        <source src="../../assets/Images/HP Images/vid1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="form-container">
