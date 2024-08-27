@@ -118,7 +118,7 @@ const ProductPage = () => {
             <img src={product.image} alt={product.title} className="product-image" />
             <h3>{product.title}</h3>
             <p>{product.description}</p>
-            <Link to={`/product/${product.id}`} className="see-more-button">
+            <Link to = '/Description' className="see-more-button">
               See More
             </Link>
           </div>

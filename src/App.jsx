@@ -12,6 +12,7 @@ import Footer from './Components/Footer/Footer';
 import Registration from './Components/Registration/Registration';
 import LoginPage from './Components/LoginPage/LoginPage';
 import Houses from './Components/Houses/Houses'
+import Description from './Components/Description/Description';
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/register" element={<Registration />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/Houses" element={<Houses />} />
+        <Route path="/Description" element={<Description />} />
       </Routes>
       <Footer />
     </Router>
