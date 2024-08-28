@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link for routing
+import axios from 'axios'; // Import Axios for HTTP requests
 import './Registration.css';
-
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +10,8 @@ const RegistrationForm = () => {
     password: '',
   });
 
+  const [error, setError] = useState(null); // For handling errors
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -17,10 +19,16 @@ const RegistrationForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you can handle the form submission, e.g., sending the data to an API.
-    console.log('Form Data Submitted:', formData);
+    try {
+      // Send a POST request to the backend to save the form data
+      const response = await axios.post('http://localhost:5000/register', formData);
+      alert(response.data.message); // Alert the user on success
+    } catch (err) {
+      console.error(err);
+      setError('Registration failed. Please try again.'); // Set error message
+    }
   };
 
   return (
@@ -61,7 +69,8 @@ const RegistrationForm = () => {
               required
             />
           </div>
-          <button type="submit"><Link to="/login">Register</Link></button>
+          {error && <p className="error">{error}</p>} {/* Display error message if any */}
+          <button type="submit">Register</button>
           <div className="login-link">
             <p>Already have an account? <Link to="/login">Login here</Link></p>
           </div>
