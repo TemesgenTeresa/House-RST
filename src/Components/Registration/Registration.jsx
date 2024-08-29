@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link for routing
-import axios from 'axios'; // Import Axios for HTTP requests
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import './Registration.css';
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
+    username: '', // Added username
     email: '',
     password: '',
   });
 
-  const [error, setError] = useState(null); // For handling errors
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({
@@ -22,12 +23,18 @@ const RegistrationForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Send a POST request to the backend to save the form data
       const response = await axios.post('http://localhost:5000/register', formData);
-      alert(response.data.message); // Alert the user on success
+      console.log(response.status);
+      alert(response.data.message);
+      
+      if (response.status === 200 || response.status === 201) {
+        navigate('/login');
+      } else {
+        setError('Registration failed. Please try again.');
+      }
     } catch (err) {
       console.error(err);
-      setError('Registration failed. Please try again.'); // Set error message
+      setError('Registration failed. Please try again.');
     }
   };
 
@@ -37,12 +44,12 @@ const RegistrationForm = () => {
         <form onSubmit={handleSubmit} className="registration-form">
           <h2>Register</h2>
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="username">Username</label>
             <input
               type="text"
-              id="name"
-              name="name"
-              value={formData.name}
+              id="username"
+              name="username"
+              value={formData.username}
               onChange={handleChange}
               required
             />
@@ -69,7 +76,7 @@ const RegistrationForm = () => {
               required
             />
           </div>
-          {error && <p className="error">{error}</p>} {/* Display error message if any */}
+          {error && <p className="error">{error}</p>}
           <button type="submit">Register</button>
           <div className="login-link">
             <p>Already have an account? <Link to="/login">Login here</Link></p>

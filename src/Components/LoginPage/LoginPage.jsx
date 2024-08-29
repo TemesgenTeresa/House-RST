@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './LoginPage.css'; // Create this CSS file for styling if needed
+import { useNavigate } from 'react-router-dom'; 
+import './LoginPage.css'; 
 
 const LoginPage = () => {
   const [loginData, setLoginData] = useState({
     email: '',
     password: '',
   });
+  const [error, setError] = useState(''); 
+  const navigate = useNavigate(); 
 
   const handleChange = (e) => {
     setLoginData({
@@ -15,10 +17,36 @@ const LoginPage = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle login logic here (e.g., sending login data to an API)
-    console.log('Login Data Submitted:', loginData);
+    
+    try {
+      const response = await fetch('http://localhost:5000/login', { 
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(loginData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        console.log('Login successful:', data);
+        // Ensure the token is saved
+        if (data.token) {
+          localStorage.setItem('token', data.token);
+          navigate('/houses'); // Navigate to the Houses page
+        } else {
+          setError('Login failed: Token not provided.');
+        }
+      } else {
+        setError(data.message || 'Login failed. Please check your credentials.');
+      }
+    } catch (err) {
+      console.error('Error logging in:', err);
+      setError('An error occurred, please try again.');
+    }
   };
 
   return (
@@ -26,6 +54,7 @@ const LoginPage = () => {
       <div className="form-container">
         <form onSubmit={handleSubmit} className="login-form">
           <h2>Login</h2>
+          {error && <p className="error-message">{error}</p>} {/* Display error message */}
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input
@@ -48,7 +77,7 @@ const LoginPage = () => {
               required
             />
           </div>
-          <button type="submit"><Link to="/Houses">Login</Link></button>
+          <button type="submit">Login</button>
         </form>
       </div>
     </div>
