@@ -13,9 +13,7 @@ import Product9 from '../../assets/Images/Houses Images/et9.jpg'
 import Product10 from '../../assets/Images/Houses Images/et10.jpg'
 import Product11 from '../../assets/Images/Houses Images/et11.jpg'
 import Product12 from '../../assets/Images/Houses Images/et12.jpg'
-import Product13 from '../../assets/Images/Houses Images/et13.jpg'
-import Product14 from '../../assets/Images/Houses Images/et14.jpg'
-import Product15 from '../../assets/Images/Houses Images/et15.jpg'
+
 
 const ProductPage = () => {
   const products = [
