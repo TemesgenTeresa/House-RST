@@ -20,7 +20,7 @@ const ProductPage = () => {
     {
       id: 1,
       image: Product1,
-      title: 'Product 1',
+      title: 'FOR RENT',
       description:(
         <>
           Owner Name: Temesgen Teresa
@@ -28,13 +28,18 @@ const ProductPage = () => {
           Price: $560,000
           <br />
           Location: Wolo Sefer
+          <br />
+          Phone Number:0909090909
+          <br />
+          Status:Individual
+          <br />
         </>
       ),
     },
     {
       id: 2,
       image: Product2,
-      title: 'Product 2',
+      title: 'FOR SELLING',
       description: (
         <>
           Owner Name: Temesgen Teresa
@@ -42,67 +47,163 @@ const ProductPage = () => {
           Price: $560,000
           <br />
           Location: Wolo Sefer
+          <br />
+          Phone Number:0909090909
+          <br />
+          Status:Verified Broaker
+          <br />
         </>
       ),
     },
     {
       id: 3,
       image: Product3,
-      title: 'Product 3',
-      description: 'This is a description for Product 3.',
+      title: 'FOR SWAPPING',
+      description: (
+        <>
+          Owner Name: Temesgen Teresa
+          <br />
+          Price: $560,000
+          <br />
+          Location: Wolo Sefer
+          <br />
+          Phone Number:0909090909
+          <br />
+          Status:Verified Broaker
+          <br />
+        </>
+      ),
     },
     {
         id: 3,
         image:Product4,
-        title: 'Product 3',
-        description: 'This is a description for Product 3.',
+        title: 'FOR RENTING',
+        description: (
+          <>
+            Owner Name: Temesgen Teresa
+            <br />
+            Price: $560,000
+            <br />
+            Location: Wolo Sefer
+            <br />
+            Phone Number:0909090909
+            <br />
+            Status:Verified Broaker
+            <br />
+          </>
+        ),
       },
       {
         id: 3,
         image: Product5,
-        title: 'Product 3',
-        description: 'This is a description for Product 3.',
+        title: 'FOR RENTING',
+        description: (
+          <>
+            Owner Name: Temesgen Teresa
+            <br />
+            Price: $560,000
+            <br />
+            Location: Wolo Sefer
+            <br />
+            Phone Number:0909090909
+            <br />
+            Status:Individuals
+            <br />
+          </>
+        ),
       },
       {
         id: 3,
         image: Product6,
-        title: 'Product 3',
-        description: 'This is a description for Product 3.',
+        title: 'FOR SELLING',
+        description: (
+          <>
+            Owner Name: Temesgen Teresa
+            <br />
+            Price: $560,000
+            <br />
+            Location: Wolo Sefer
+            <br />
+            Phone Number:0909090909
+            <br />
+            Status:Verified Broaker
+            <br />
+          </>
+        ),
       },
       {
         id: 3,
         image: Product7,
-        title: 'Product 3',
-        description: 'This is a description for Product 3.',
+        title: 'FOR SWAPPING',
+        description: (
+          <>
+            Owner Name: Temesgen Teresa
+            <br />
+            Price: $560,000
+            <br />
+            Location: Wolo Sefer
+            <br />
+            Phone Number:0909090909
+            <br />
+            Status:Verified Broaker
+            <br />
+          </>
+        ),
       },
       {
         id: 3,
         image: Product8,
-        title: 'Product 3',
-        description: 'This is a description for Product 3.',
+        title: 'FOR SELLING',
+        description: (
+          <>
+            Owner Name: Temesgen Teresa
+            <br />
+            Price: $560,000
+            <br />
+            Location: Wolo Sefer
+            <br />
+            Phone Number:0909090909
+            <br />
+            Status:Individual
+            <br />
+          </>
+        ),
       },
       {
         id: 3,
         image: Product9,
-        title: 'Product 3',
-        description: 'This is a description for Product 3.',
+        title: 'FOR SWAPPING',
+        description: (
+          <>
+            Owner Name: Temesgen Teresa
+            <br />
+            Price: $560,000
+            <br />
+            Location: Wolo Sefer
+            <br />
+            Phone Number:0909090909
+            <br />
+            Status:Verified Broaker
+            <br />
+          </>
+        ),
       },
       {
         id: 3,
         image: Product10,
-        title: 'Product 3',
+        title: 'FOR RENT',
         description: 'This is a description for Product 3.',
       },
       {
         id: 3,
         image: Product11,
-        title: 'Product 3',
+        title: 'FOR SWAPPING',
         description: 'This is a description for Product 3.',
       },
       {
         id: 3,
         image: Product12,
-        title: 'Product 3',
+        title: 'FOR RENTING',
         description: 'This is a description for Product 3.',
       }
       
